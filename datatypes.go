@@ -172,6 +172,12 @@ func (trigger TriggerData) GetTriggerURI(frontURI string) string {
 	return ""
 }
 
+// Team is a structure that represents a group of users that share a subscriptions and contacts
+type Team struct {
+	Name        string
+	Description string
+}
+
 // ContactData represents contact object
 type ContactData struct {
 	Type  string `json:"type"`
